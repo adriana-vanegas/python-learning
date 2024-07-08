@@ -141,11 +141,11 @@ def turns(game_board,not_available,player_1_turn):
     else:
       quit()
   while player_1_turn== True:
-      player_1_play = input("Player 1: Pick position ")
+      player_1_play = input("Player 1, pick position: ")
       next_step(game_board,not_available,player_1_play,player_1_turn)
       
   while player_1_turn== False:
-      player_2_play = input("Player 2: Pick position ")
+      player_2_play = input("Player 2, pick position: ")
       next_step(game_board,not_available,player_2_play,player_1_turn)
   
 
