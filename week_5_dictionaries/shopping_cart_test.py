@@ -15,3 +15,6 @@ ordered_dictionary = sorted(dictionary.items(), key = lambda list:list[1]['quant
 for product in ordered_dictionary:
   print(f"{product[1]['quantity']} {product[0]} for ${product[1]['price']}")
 
+val = '3.99'
+val = val.replace('.','')
+print(val)
