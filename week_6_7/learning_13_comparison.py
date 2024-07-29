@@ -27,6 +27,8 @@ class Item:
   def name(self):
     return self.__name
   
+
+  
   def calculate_price(self):
     cost = self.price * self.quantity
     print(f"Total cost of {self.quantity} {self.name}s is ${cost}")

@@ -1,6 +1,7 @@
 # Declare Typings
 # You can declare an instance variable to a specific type like float, str, int, etc.
 
+# Running validations by using assert to validate the arguments given
 
 class Item:
   def __init__(self,name: str, price: float, quantity = 0):

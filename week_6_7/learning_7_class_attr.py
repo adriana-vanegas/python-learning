@@ -1,6 +1,8 @@
 # Global class attributes
 # Class attribute will belong to the class itself
 
+# How to see attributes at the class and instance level
+
 class Item:
   discount_rate = 0.2 # Full store discount
 

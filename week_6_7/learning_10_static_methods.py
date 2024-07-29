@@ -6,8 +6,8 @@
 # to each instance
 
 # vs.
-# Class methods are used to transfer data from a separate source
-# and instantiate it
+# Class methods are usually used to transfer data from a separate source
+# and instantiate it, like a csv, JSON, or yaml file
 
 import csv # to read the csv file
 
