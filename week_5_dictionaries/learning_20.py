@@ -1,5 +1,12 @@
+
 product_price = {'Macbook Air': 999,
                  'Apple Watch': 399,
-                 'iPad Pro': 999
-                 }
+                 'Airpods Pro': 249 }
+
 print(product_price)
+
+user_info = {'first name': 'Lewis',
+              'last name': 'Hamilton',
+              'email'    : 'lewis@gmail.com'}
+
+

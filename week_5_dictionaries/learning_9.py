@@ -1,6 +1,7 @@
 # Tuples
 # Read only list, cannot be modified or changed
 # can be used with or without ()
+# For example geographic coordinates shouldn't change
 
 point = (1,2)
 

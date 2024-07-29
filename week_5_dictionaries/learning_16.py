@@ -25,5 +25,6 @@ print(*combine)
 
 one = {'x':1}
 two = dict(x=10,y=2)
+# To unpack all values inside dictionaries, you have to use {} and inside **
 combo = {**one, **two,'z':1}
 print(combo)

@@ -43,7 +43,7 @@ print(list_2[1::2])
 # Example 2: print in reverse order
 print(list_2[::-1])
 
-# reverse() only works for numbers in a string
+# Or you can use the reverse method
 list_2.reverse()
 print(list_2)
 

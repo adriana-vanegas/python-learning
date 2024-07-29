@@ -24,11 +24,13 @@ def add(starting_val):
   print(f'Result = {new_value}')
   calculation(new_value)
 
+
 def subtract(starting_val):
   sub_value = input(f'{starting_val} - ')
   new_value = int(starting_val) - int(sub_value)
   print(f'Result = {new_value}')
   calculation(new_value)
+
 
 def multiply(starting_val):
   mult_value = input(f'{starting_val} * ')
@@ -36,11 +38,13 @@ def multiply(starting_val):
   print(f'Result = {new_value}')
   calculation(new_value)
 
+
 def divide(starting_val):
   div_value = input(f'{starting_val} / ')
   new_value = int(starting_val) / int(div_value)
   print(f'Result = {new_value}')
   calculation(new_value)
+
 
 def start():
   starting_value = input("> ")

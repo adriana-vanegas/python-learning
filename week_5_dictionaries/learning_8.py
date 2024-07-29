@@ -20,6 +20,8 @@ if not browse: #if not browse means that the list is empty
 
 #Queue 
 #First in, first out
+# Deque ("deck") is useful because it supports fast appends and pops on both ends
+# Useful for adding an undo function for example!
 from collections import deque
 queue = deque([])
 queue.append(1)

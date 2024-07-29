@@ -1,4 +1,4 @@
-dictionary = {'apple':{'price':5,'quantity':5}}
+dictionary = {'Apple Juice':{'price':5.99,'quantity':2}}
 
 dictionary['pie'] = {'price': 10,'quantity':2}
 

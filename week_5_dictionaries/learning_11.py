@@ -10,7 +10,7 @@ from array import array
 numbers = array('i',[1,2,3])
 # For arrays, you need to use the right typecode: https://docs.python.org/3/library/array.html
 # i typecode is for integers, so you can't append non-integers
-numbers.append('a')
+numbers.append('a') #error
 
 print(type(numbers))
 print(numbers)
