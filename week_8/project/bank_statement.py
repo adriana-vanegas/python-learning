@@ -7,12 +7,12 @@ contents = csv.reader(file)
 
 
 # Step 1 create a connection with the SQL database
-# with sqlite3.connect("bank_transaction.sql") as transaction_db:
+with sqlite3.connect("bank_transaction.sql") as transaction_db:
 
 #   # transaction_db.execute("DROP TABLE IF EXISTS bank_transaction")
 #   # print("Data Dropped")
 # # Step 2 create a cursor object to execute
-#   cursor = transaction_db.cursor()
+  cursor = transaction_db.cursor()
 
 # Step 2 create a table
   # cursor.execute('''CREATE TABLE bank_transaction(
@@ -30,7 +30,18 @@ contents = csv.reader(file)
   #                     description,category,debit,credit) 
   #                     VALUES(?,?,?,?,?,?,?)'''
 
-# Step 4
+# Step 4 Insert records
   # cursor.executemany(insert_records,contents)
 
-file.close()
+
+  cursor.execute("SELECT * FROM bank_transaction")
+
+  select_all = cursor.fetchall()
+  print(select_all)
+
+
+
+# Step 5 Save changes
+  # transaction_db.commit()
+
+# file.close()
