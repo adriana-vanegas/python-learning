@@ -1,17 +1,16 @@
 import csv
-import os
 
-try:
-  file_path = "/Users/avanegas/Documents/GitHub/python-learning/week_8/data.csv"
-  print(f"File will be created at {file_path}")
-  with open(file_path,"w") as file:
-    writer = csv.writer(file)
-    writer.writerow(["transaction","product_id","price"])
-    writer.writerow(["ABC123","ABC123",10])
-    writer.writerow(["BCA231","BCA231",9])
-    writer.writerow(["CAB312","CAB312",8])
-  
-  print(f"File written successfully at {file_path}")
+file_path = "week_8/data.csv"
 
-except Exception as e:
-  print(f"Error occurred {e}")
+with open(file_path,"w") as file:
+  writer = csv.writer(file)
+  writer.writerow(["transaction","product_id","price"])
+  writer.writerow(["ABC123","ABC123",10])
+  writer.writerow(["BCA231","BCA231",9])
+  writer.writerow(["CAB312","CAB312",8])
+
+with open(file_path, 'r') as read_file:
+  reader = csv.reader(read_file)
+  # print([i for i in reader])
+  # or 
+  print(list(reader))
