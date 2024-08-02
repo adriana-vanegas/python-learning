@@ -8,6 +8,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
 # MIME text let's us write the body of a message as text or HTML
 
 import smtplib

@@ -1,3 +1,5 @@
+# Paths
+
 import os
 
 print("This is the file path")
@@ -14,4 +16,5 @@ with open('week_8/new_directory/myfile.txt','w') as fp:
 with open('week_8/new_directory/myfile_to_delete.txt','w') as fp:
   pass
 
+# Remove a file
 os.remove('week_8/new_directory/myfile_to_delete.txt')
