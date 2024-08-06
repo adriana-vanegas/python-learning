@@ -34,7 +34,7 @@ with sqlite3.connect("bank_transaction.sql") as transaction_db:
   # cursor.executemany(insert_records,contents)
 
 
-  cursor.execute("SELECT * FROM bank_transaction")
+  cursor.execute("SELECT category, sum(debit) AS debit_total FROM bank_transaction GROUP BY category ORDER BY 2 DESC")
 
   select_all = cursor.fetchall()
   print(select_all)
