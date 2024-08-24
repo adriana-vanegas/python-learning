@@ -48,7 +48,7 @@ with sqlite3.connect("week_9/helpdesk_db.sql") as connection:
   
   # # Step 4b insert data
   # insert = cursor.executemany(insert, content)
-
+  file.close()
   # Step 5 check data
   rows = cursor.execute("SELECT id,subject,language FROM helpdesk WHERE language = 'en'").fetchall()
   print(rows)
